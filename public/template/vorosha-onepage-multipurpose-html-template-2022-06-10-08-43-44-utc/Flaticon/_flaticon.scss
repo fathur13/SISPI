@@ -1,0 +1,128 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 02/05/2019 02:18
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-focus:before { content: "\f100"; }
+.flaticon-career:before { content: "\f101"; }
+.flaticon-career-1:before { content: "\f102"; }
+.flaticon-rate:before { content: "\f103"; }
+.flaticon-code:before { content: "\f104"; }
+.flaticon-laptop:before { content: "\f105"; }
+.flaticon-win:before { content: "\f106"; }
+.flaticon-plane:before { content: "\f107"; }
+.flaticon-multimedia:before { content: "\f108"; }
+.flaticon-left:before { content: "\f109"; }
+.flaticon-right:before { content: "\f10a"; }
+.flaticon-logout:before { content: "\f10b"; }
+.flaticon-trophy:before { content: "\f10c"; }
+.flaticon-pie-chart:before { content: "\f10d"; }
+.flaticon-goal:before { content: "\f10e"; }
+.flaticon-economic:before { content: "\f10f"; }
+.flaticon-portfolio:before { content: "\f110"; }
+.flaticon-agenda-1:before { content: "\f111"; }
+.flaticon-agenda:before { content: "\f112"; }
+.flaticon-add-to-cart:before { content: "\f113"; }
+.flaticon-supermarket:before { content: "\f114"; }
+.flaticon-worldwide:before { content: "\f115"; }
+.flaticon-bookmark:before { content: "\f116"; }
+.flaticon-security:before { content: "\f117"; }
+.flaticon-development:before { content: "\f118"; }
+.flaticon-screen:before { content: "\f119"; }
+.flaticon-bullseye:before { content: "\f11a"; }
+.flaticon-promotion:before { content: "\f11b"; }
+.flaticon-economy:before { content: "\f11c"; }
+.flaticon-development-1:before { content: "\f11d"; }
+.flaticon-heart:before { content: "\f11e"; }
+.flaticon-coding:before { content: "\f11f"; }
+.flaticon-viral-marketing:before { content: "\f120"; }
+.flaticon-sketch:before { content: "\f121"; }
+.flaticon-skyline:before { content: "\f122"; }
+.flaticon-employee:before { content: "\f123"; }
+.flaticon-fork:before { content: "\f124"; }
+.flaticon-doctor:before { content: "\f125"; }
+.flaticon-work:before { content: "\f126"; }
+.flaticon-growth:before { content: "\f127"; }
+.flaticon-design:before { content: "\f128"; }
+.flaticon-feature:before { content: "\f129"; }
+.flaticon-recycle-sign:before { content: "\f12a"; }
+.flaticon-balance:before { content: "\f12b"; }
+    
+    $font-Flaticon-focus: "\f100";
+    $font-Flaticon-career: "\f101";
+    $font-Flaticon-career-1: "\f102";
+    $font-Flaticon-rate: "\f103";
+    $font-Flaticon-code: "\f104";
+    $font-Flaticon-laptop: "\f105";
+    $font-Flaticon-win: "\f106";
+    $font-Flaticon-plane: "\f107";
+    $font-Flaticon-multimedia: "\f108";
+    $font-Flaticon-left: "\f109";
+    $font-Flaticon-right: "\f10a";
+    $font-Flaticon-logout: "\f10b";
+    $font-Flaticon-trophy: "\f10c";
+    $font-Flaticon-pie-chart: "\f10d";
+    $font-Flaticon-goal: "\f10e";
+    $font-Flaticon-economic: "\f10f";
+    $font-Flaticon-portfolio: "\f110";
+    $font-Flaticon-agenda-1: "\f111";
+    $font-Flaticon-agenda: "\f112";
+    $font-Flaticon-add-to-cart: "\f113";
+    $font-Flaticon-supermarket: "\f114";
+    $font-Flaticon-worldwide: "\f115";
+    $font-Flaticon-bookmark: "\f116";
+    $font-Flaticon-security: "\f117";
+    $font-Flaticon-development: "\f118";
+    $font-Flaticon-screen: "\f119";
+    $font-Flaticon-bullseye: "\f11a";
+    $font-Flaticon-promotion: "\f11b";
+    $font-Flaticon-economy: "\f11c";
+    $font-Flaticon-development-1: "\f11d";
+    $font-Flaticon-heart: "\f11e";
+    $font-Flaticon-coding: "\f11f";
+    $font-Flaticon-viral-marketing: "\f120";
+    $font-Flaticon-sketch: "\f121";
+    $font-Flaticon-skyline: "\f122";
+    $font-Flaticon-employee: "\f123";
+    $font-Flaticon-fork: "\f124";
+    $font-Flaticon-doctor: "\f125";
+    $font-Flaticon-work: "\f126";
+    $font-Flaticon-growth: "\f127";
+    $font-Flaticon-design: "\f128";
+    $font-Flaticon-feature: "\f129";
+    $font-Flaticon-recycle-sign: "\f12a";
+    $font-Flaticon-balance: "\f12b";
