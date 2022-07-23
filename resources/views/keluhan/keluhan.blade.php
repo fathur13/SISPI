@@ -10,16 +10,16 @@
     <!-- Page Title -->
     <title>SISPI - KELUHAN</title>
 
-    <link rel="icon" href="img/Logo_Politap_kecil.png" />
+    <link rel="icon" href="{{ url('public/assets') }}/img/Logo_Politap_kecil.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="app2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="app2/css/fontawesome.css" />
-    <link rel="stylesheet" href="app2/css/flaticon.css" />
-    <link rel="stylesheet" href="app2/css/slick.css" />
-    <link rel="stylesheet" href="app2/css/lightgallery.min.css" />
-    <link rel="stylesheet" href="app2/css/animate.css" />
-    <link rel="stylesheet" href="app2/css/style.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/fontawesome.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/flaticon.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/slick.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/animate.css" />
+    <link rel="stylesheet" href="{{ url('public') }}/app2/css/style.css" />
     <script src="/vendor/datepicker/js/jquery-1.11.3.min.js"></script>
 
 </head>
@@ -45,7 +45,7 @@
                 <div class="st-main-header-in">
                     <div class="st-main-header-left ">
                         <a class="st-site-branding st-white-logo" href="index.html">
-                            <img src="img/sispi1.png" alt="Vorosha"></a>
+                            <img src="{{ url('public/assets') }}/img/sispi1.png" alt="Vorosha"></a>
 
                     </div>
                     <div class="st-main-header-right">
@@ -93,21 +93,21 @@
                         <div class="slick-slide-in">
                             <div class="st-hero st-style1 st-gray-bg">
                                 <div class="st-hero-img">
-                                    <img src="app2/images/bg/111.jpg" alt="Hero img">
+                                    <img src="{{ url('public') }}/app2/images/bg/111.jpg" alt="Hero img">
                                 </div>
                             </div>
                         </div>
                         <div class="slick-slide-in">
                             <div class="st-hero st-style1 st-gray-bg">
                                 <div class="st-hero-img">
-                                    <img src="app2/images/bg/112.jpg" alt="Hero img">
+                                    <img src="{{ url('public') }}/app2/images/bg/112.jpg" alt="Hero img">
                                 </div>
                             </div>
                         </div>
                         <div class="slick-slide-in">
                             <div class="st-hero st-style1 st-gray-bg">
                                 <div class="st-hero-img">
-                                    <img src="app2/images/bg/113.jpeg" alt="Hero img">
+                                    <img src="{{ url('public') }}/app2/images/bg/113.jpeg" alt="Hero img">
                                 </div>
                             </div>
                         </div>
@@ -165,34 +165,6 @@
                                         @endforeach
                                         <div class="col-sm"></div>
                                     </div>
-                                    {{-- <select name="" id="kelas1">
-                                        <option value="nama">1</option>
-                                        <option value="2">2</option>
-                                    </select> --}}
-                                    {{-- <div class="row" id="kelas2">
-                                            <div class="col-10">
-                                                <label for="" class="control-label">Jenis Kelengkapan</label>
-                                            </div>
-                                            <div class="col-2">
-                                                <label for="">Aksi</label>
-                                            </div>
-                                        </div>
-                                        <script>
-                                            $(document).ready(function() {
-
-                                                $('#kelas2').hide();
-                                                $('#kelas1').on("change", function() {
-                                                    // $('#kelas1').prop('selectedIndex', 'pilih')
-                                                    if ($(this).val() === "2") {
-                                                        $('#kelas2').show();
-                                                        // console.log('aria');
-                                                    } else {
-                                                        $('#kelas2').hide();
-                                                    }
-                                                })
-                                            });
-                                        </script> --}}
-
 
                                     <div class="complaint-help">
                                         Perhatikan Cara Menyampaikan <span id="classfication_name">Pengaduan</span>
@@ -217,7 +189,7 @@
                                                         style="top: 11px;" data-dismiss="modal"
                                                         aria-hidden="true">×</button>
                                                 </div>
-                                                <img src="/img/handbook.png" width="100%">
+                                                <img src="{{ url('public/assets') }}/img/handbook.png" width="100%">
                                             </div>
                                         </div>
 
@@ -403,7 +375,7 @@
             <div class="st-height-b85 st-height-lg-b50"></div>
             <style>
                 .foto {
-                    background-image: url("app2/images/bg/back.jpg");
+                    background-image: url("{{ url('public') }}/app2/images/bg/back.jpg");
                     background-size: cover;
                 }
             </style>
@@ -465,12 +437,12 @@
                     <div class="col-lg-4">
                         <div class="st-footer-widget">
                             <div class="st-text-field">
-                                <a href="https://politap.ac.id/" target="_blank"><img src="app2/images/logo.png"
+                                <a href="https://politap.ac.id/" target="_blank"><img src="{{ url('public') }}/app2/images/logo.png"
                                         alt="Vorosha" class="st-white-logo"></a>
                                 <a href="https://politap.ac.id/" target="_blank" style="padding-left: 39px"><b>
                                         Satuan Pengawas Internal</b></a>
 
-                                <a href="https://politap.ac.id/" target="_blank"><img src="app2/images/logo.png"
+                                <a href="https://politap.ac.id/" target="_blank"><img src="{{ url('public') }}/app2/images/logo.png"
                                         alt="Vorosha" class="st-dark-logo"></a>
                                 <div class="st-height-b25 st-height-lg-b25"></div>
                                 <ul class="st-social-btn st-style1 st-mp0">
@@ -550,14 +522,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    <script src="app2/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="app2/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="app2/js/isotope.pkg.min.js"></script>
-    <script src="app2/js/jquery.slick.min.js"></script>
-    <script src="app2/js/mailchimp.min.js"></script>
-    <script src="app2/js/counter.min.js"></script>
-    <script src="app2/js/lightgallery.min.js"></script>
-    <script src="app2/js/wow.min.js"></script>
-    <script src="app2/js/main.js"></script>
+    <script src="{{ url('public') }}/app2/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/isotope.pkg.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/jquery.slick.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/mailchimp.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/counter.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/lightgallery.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/wow.min.js"></script>
+    <script src="{{ url('public') }}/app2/js/main.js"></script>
 
 </html>
