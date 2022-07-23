@@ -37,9 +37,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <dt>Keterangan</dt>
-                                @foreach (explode(',', $dokuman->id_kelengkapan) as $h)
-                                    <dd>- {{ $h }} <br> </dd>
-                                @endforeach
+                                @if ($dokuman->id_kelengkapan)
+                                    @foreach (explode(',', $dokuman->id_kelengkapan) as $h)
+                                        <dd>- {{ $h }} <br> </dd>
+                                    @endforeach
+                                @else
+                                    <dd></dd>
+                                @endif
                             </div>
                         </div>
                         <hr>
@@ -53,7 +57,7 @@
                                 <tbody>
                                     <td>
                                         <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" terget="popup"
-                                            onclick="window.open('{{ url("$dokuman->file") }}','popup','width=800,height=600'); return false;">Download
+                                            onclick="window.open('{{ url('public', $dokuman->file) }}','popup','width=800,height=600'); return false;">Download
                                             Lampiran</a>
                                     </td>
                                 </tbody>

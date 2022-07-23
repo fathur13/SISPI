@@ -10,20 +10,20 @@
     <meta name="author" content="">
 
     <title> SISPI</title>
-    <link rel="icon" href="/img/Logo_Politap_kecil.png" />
+    <link rel="icon" href="{{ url('public/assets') }}/img/Logo_Politap_kecil.png" />
 
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url('public/assets') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ url('public/assets') }}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{ url('public/assets') }}/css/sb-admin-2.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <script src="/vendor/datepicker/js/jquery-1.11.3.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/datepicker/js/jquery-1.11.3.min.js"></script>
 
 
 
@@ -53,32 +53,32 @@
 
     </div>
 
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="{{ url('public/assets') }}/js/demo/datatables-demo.js"></script>
     <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin-2.min.js"></script>
+    <script src="{{ url('public/assets') }}/js/sb-admin-2.min.js"></script>
 
 
-    <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="/js/demo/datatables-demo.js"></script>
-    <script src="/vendor/datepicker/js/bootstrap.js"></script>
+    <script src="{{ url('public/assets') }}/js/demo/datatables-demo.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/datepicker/js/bootstrap.js"></script>
 
     <!-- Page level plugins -->
-    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="/js/demo/chart-area-demo.js"></script>
-    <script src="/js/demo/chart-pie-demo.js"></script>
-    <script src="/js/demo/chart-bar-demo.js"></script>
+    <script src="{{ url('public/assets') }}/js/demo/chart-area-demo.js"></script>
+    <script src="{{ url('public/assets') }}/js/demo/chart-pie-demo.js"></script>
+    <script src="{{ url('public/assets') }}/js/demo/chart-bar-demo.js"></script>
 
 
 </body>

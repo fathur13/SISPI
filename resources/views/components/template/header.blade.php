@@ -14,10 +14,10 @@
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ auth()->user()->nama }}</span>
                 @if (auth()->user()->foto)
-                    <img class="img-profile rounded-circle" src="{{ url(auth()->user()->foto) }}" frameborder="0"
+                    <img class="img-profile rounded-circle" src="{{ url('public', auth()->user()->foto) }}" frameborder="0"
                         type="image/jpeg">
                 @else
-                    <img class="img-profile rounded-circle" src="/img/profile.jpg" frameborder="0" type="image/jpeg">
+                    <img class="img-profile rounded-circle" src="{{ url('public/assets') }}/img/profile.jpg" frameborder="0" type="image/jpeg">
                 @endif
             </a>
 
@@ -25,9 +25,9 @@
             @if (auth()->user()->foto)
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                         <div class="dropdown-item dropdown-profile-pic" href="" terget="popup"
-                            onclick="window.open('{{ url(auth()->user()->foto) }}','popup','width=800,height=600'); return false;"
+                            onclick="window.open('{{ url('public',auth()->user()->foto) }}','popup','width=800,height=600'); return false;"
                             style="text-align: center; padding: 1%;">
-                        <img src="{{ url(auth()->user()->foto) }}" height="150px" width="150px"
+                        <img src="{{ url('public',auth()->user()->foto) }}" height="150px" width="150px"
                             class="circularimage" />
                         <p class="text-center m-t-10 m-b-20 pt-2">
                             {{ auth()->user()->nama }}
@@ -37,9 +37,9 @@
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                         aria-labelledby="userDropdown">
                         <div class="dropdown-item dropdown-profile-pic" href="" terget="popup"
-                            onclick="window.open('{{ url('/img/profile.jpg') }}','popup','width=800,height=600'); return false;"
+                            onclick="window.open('{{ url('public/assets') }}/img/profile.jpg','popup','width=800,height=600'); return false;"
                             style="text-align: center; padding: 1%;">
-                            <img src="/img/profile.jpg" height="150px" width="150px" class="circularimage" />
+                            <img src="{{ url('public/assets') }}/img/profile.jpg" height="150px" width="150px" class="circularimage" />
                             <p class="text-center m-t-10 m-b-20 pt-2">
                                 {{ auth()->user()->nama }}
                             </p>

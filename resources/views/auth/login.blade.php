@@ -10,20 +10,22 @@
     <meta name="author" content="">
 
     <title>SSPI | LogIn</title>
+    <link rel="icon" href="{{ url('public/assets') }}/img/Logo_Politap_kecil.png" />
+
 
     <!-- Custom fonts for this template-->
-    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url('public/assets') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ url('public/assets') }}/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 <style>
     body {
-        background-image: url("/img/abstract-blue-geometric-shapes-background_1035-17545.webp");
+        background-image: url("{{ url('public/assets') }}/img/abstract-blue-geometric-shapes-background_1035-17545.webp");
         background-size: cover;
     }
 </style>
@@ -44,7 +46,7 @@
                         <form action="{{ url('/login') }}" method="POST">
                             @csrf
                             <div class="row">
-                                <div class="col-lg-6"><img src="/img/login.jpg" alt="" style="height: 100%">
+                                <div class="col-lg-6"><img src="{{ url('public/assets') }}/img/login.jpg" alt="" style="height: 100%">
                                 </div>
                                 <div class="col-lg-6" style="padding-left: 40px">
                                     <div class="p-5">
@@ -92,14 +94,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ url('public/assets') }}/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin-2.min.js"></script>
+    <script src="{{ url('public/assets') }}/js/sb-admin-2.min.js"></script>
 
 </body>
 

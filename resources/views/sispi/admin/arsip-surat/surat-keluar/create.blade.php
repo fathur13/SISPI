@@ -15,7 +15,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 @foreach ($list_templatesurat as $templatesurat)
-                                    <a href="{{ url("$templatesurat->file_template_surat") }}" terget="_blank"
+                                    <a href="{{ url('public',$templatesurat->file_template_surat) }}" terget="_blank"
                                         download=""><button
                                             class="btn " style="font-size: 12px; "  ><i class="fa fa-download"></i>
                                             {{ $templatesurat->nama }}</button>

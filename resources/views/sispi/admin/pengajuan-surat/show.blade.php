@@ -43,7 +43,7 @@
                                 </thead>
                                 <tbody>
                                     <td>
-                                        <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" href="{{ url("$suratkeluar->file") }}" target="_blank">Download
+                                        <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" href="{{ url('public',$suratkeluar->file) }}" target="_blank">Download
                                             Lampiran</a>
                                     </td>
                                 </tbody>

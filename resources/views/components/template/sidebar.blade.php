@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <img src="/img/Logo_Politap_kecil.png" alt="" style="height: 220%">
+        <img src="{{ url('public/assets') }}/img/Logo_Politap_kecil.png" alt="" style="height: 220%">
         <div class="sidebar-brand-text mx-3"
             style="font-size: 40px; font-family: 'Times New Roman', Times, serif;">SISPI</div>
     </a>

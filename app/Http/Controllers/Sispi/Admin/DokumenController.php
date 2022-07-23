@@ -35,7 +35,7 @@ class DokumenController extends Controller
             'besaran_spm' => 'required',
             'id_jenisdokumen' => 'required',
             'kelengkapan' => 'required',
-            'file' => 'required|max:10000|mimes:pdf, zip, rar',
+            'file' => 'required|max:100000|mimes:pdf, zip, rar',
 
         ];
         $text = [

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 23 Jul 2022 pada 06.53
+-- Waktu pembuatan: 23 Jul 2022 pada 08.09
 -- Versi server: 5.7.33
 -- Versi PHP: 7.4.19
 
@@ -39,13 +39,6 @@ CREATE TABLE `admin__dokumen` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `admin__dokumen`
---
-
-INSERT INTO `admin__dokumen` (`id`, `nomor_spm`, `tanggal`, `besaran_spm`, `uraian`, `id_jenisdokumen`, `id_kelengkapan`, `file`, `created_at`, `updated_at`) VALUES
-('96d0b066-9ef0-4610-9254-df4615367833', '001', '2022-07-19', '1', 'dokumen Pertama', '96b02781-8a66-4b43-babc-77181e76168d', 'SPM,Penilaian SKP dari Kepegawaian', 'app/dokumenfile/1658230568-file-01zZv.pdf', '2022-07-19 04:36:08', '2022-07-19 04:36:08');
 
 -- --------------------------------------------------------
 
@@ -256,15 +249,6 @@ CREATE TABLE `admin__suratkeluar` (
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `admin__suratkeluar`
---
-
-INSERT INTO `admin__suratkeluar` (`id`, `nomorsurat`, `perihal`, `tanggal`, `id_jenissurat`, `id_kelengkapan`, `file`, `keterangan`, `tujuan`, `status`, `created_at`, `updated_at`) VALUES
-('96d0af89-68fd-4172-b806-80cf6b1e8cef', '1/PL39.18/../../2022', 'Surat Pertama', '2022-07-19', '96b0c24d-532e-441c-aa93-4e1aeace1e00', NULL, 'app/suratkeluarfile/1658230423-file-65WSP.docx', NULL, 'fathur Rahman', 3, '2022-07-19 04:33:43', '2022-07-19 04:34:26'),
-('96d0afbc-2990-4132-8eac-15b0abcd4ba4', '2/PL39.18/../../2022', 'Surat Kedua', '2022-07-19', '96b0c265-25a2-4c3b-b8ef-8eeb71179b87', NULL, 'app/suratkeluarfile/1658230457-file-fLaQI.docx', NULL, 'Fathur Rahman', 1, '2022-07-19 04:34:17', '2022-07-19 04:34:17'),
-('96d247a5-11d6-4d61-8b11-956af9c1755f', '3/PL39.18/../../2022', 'keterangan', '2022-07-20', '96b0c283-6fa5-496e-9913-b0babee8b20a', NULL, 'app/suratkeluarfile/1658298945-file-JbgpW.pdf', 'selesai', 'Baak', 2, '2022-07-19 23:34:52', '2022-07-19 23:35:45');
-
 -- --------------------------------------------------------
 
 --
@@ -282,14 +266,6 @@ CREATE TABLE `admin__suratmasuk` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `admin__suratmasuk`
---
-
-INSERT INTO `admin__suratmasuk` (`id`, `tanggal`, `nomor_surat`, `perihal`, `asal_surat`, `id_jenissurat`, `file`, `created_at`, `updated_at`) VALUES
-('96d0af24-2053-44a7-9ccc-e92276a8bd8d', '2022-07-19', '1.010/DP-KM/IX/2022', 'Surat Pertama', 'Fathur Rahaman', '96b0c24d-532e-441c-aa93-4e1aeace1e00', 'app/surat-masukfile/1658230356-file-zU6Jv.pdf', '2022-07-19 04:32:37', '2022-07-19 04:32:37'),
-('96d0af5a-dc84-43dc-8d6a-cc6e39e0171d', '2022-07-19', '2.010/DP-KM/IX/2022', 'Surat Kedua', 'Fathur Rahman', '96b0c265-25a2-4c3b-b8ef-8eeb71179b87', 'app/surat-masukfile/1658230393-file-iERoZ.pdf', '2022-07-19 04:33:13', '2022-07-19 04:33:13');
 
 -- --------------------------------------------------------
 
@@ -375,14 +351,6 @@ CREATE TABLE `keluhan__public` (
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `keluhan__public`
---
-
-INSERT INTO `keluhan__public` (`id`, `id_jenislaporan`, `judul`, `isi`, `tanggal`, `lokasi`, `id_kategorilaporan`, `file`, `email`, `status`, `nama`, `keterangan`, `created_at`, `updated_at`) VALUES
-('96d0b1a8-1f1f-4185-bb1c-386ec1e702d1', '96a9e6c4-13f2-4272-aac8-0067d3958f9d', 'laporan Pertama', 'Laporan', '2022-07-19', 'Ketapang', NULL, 'app/keluhanfile/1658230779-file-cQZ40.pdf', 'fathur12fr34@gmail.com', 1, 'Fathur Rahman', NULL, '2022-07-19 04:39:39', '2022-07-19 04:39:39'),
-('96d24628-a368-49b8-b16f-f64e381ed7f6', '96a9e6c4-13f2-4272-aac8-0067d3958f9d', 'Surat Kedua', 'Isian', '2022-07-20', 'BAAK', NULL, 'app/keluhanfile/1658298643-file-sReXk.pdf', 'fathur12fr34@gmail.com', 2, 'Fathur Rahman', 'Setuju', '2022-07-19 23:30:43', '2022-07-19 23:31:16');
-
 -- --------------------------------------------------------
 
 --
@@ -423,7 +391,7 @@ INSERT INTO `simadu__pegawai` (`id`, `nip`, `nup`, `nik_ktp`, `email`, `nama`, `
 ('0854e795-2c48-484e-b919-675b7be7dc7c', '19830917 202121 1 001', NULL, NULL, NULL, 'Adha Panca Wardanu', NULL, 'S.TP.,M.P', 'Pontianak', '1983-09-17', 'Laki-laki', 'Islam', '$2y$10$YDjrHk54U6.Da4s3wYi.6upZEW7.n3KIXtt5fBlSpAq0Wn75/uKEm', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
 ('093cca9b-a773-4867-a5f6-a665467f791b', NULL, '19890622 201601 95', NULL, NULL, 'Juniarti', NULL, 'A.Md', 'Ketapang', '1989-06-22', 'Perempuan', '', '$2y$10$kLM1j8yc6xyHeJM2EIjqne75AuBlcIjxCeaKsyqcS2rpDpWgfN4dO', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
 ('0a89879b-7875-4420-ab42-4ec9cb00e86e', '19910217 202121 1 002', NULL, NULL, NULL, 'Fajar Pebriyono', NULL, 'A. Md', 'Ketapang', '1991-02-17', 'Laki-laki', '', '$2y$10$WyCQmpKxfhCB6L7UCq.N6uFmkyg/EDLHP1H3U77Qr3E.ykXIgBm6O', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
-('0d8bcf7b-fb92-11ec-a972-088fc330ed2d', '123456789123456789', '12345678901234567', NULL, NULL, 'fathur', NULL, NULL, NULL, NULL, NULL, NULL, '$2y$10$LdgKwxXRtGi7ETgyKqjihuVHZmr4MBNpo/BctqZpO9yuzQob0.BW6', 'app/fotofoto/1657266515-foto-O73Ou.jpg', '', 'iXz3joPjwzLgBEpnb7tFYbt6PISNoRVZGRaGmdeNYz0AyospQSJQTztp47x1', NULL, '2022-07-08 00:49:38'),
+('0d8bcf7b-fb92-11ec-a972-088fc330ed2d', '123456789123456789', '12345678901234567', NULL, NULL, 'fathur', NULL, NULL, NULL, NULL, NULL, NULL, '$2y$10$LdgKwxXRtGi7ETgyKqjihuVHZmr4MBNpo/BctqZpO9yuzQob0.BW6', 'app/fotofoto/1657266515-foto-O73Ou.jpg', '', 'vhPJvVnzjATAxVcbyplEkVcsHAHtWiMuu2u5Bmq61FEN3e4HdJCSEFGlJvXZ', NULL, '2022-07-08 00:49:38'),
 ('0ed02966-83fd-4b68-b3e6-077f75582dd2', NULL, '19961119 202107 260', '6171035911960020', NULL, 'Dyah Novia Nugraheni', NULL, 'S.Tr.Ak.,M.Ak.', 'pontianak', '1996-11-19', 'Perempuan', 'Islam', '$2y$10$HGz7K2R0yzXL4dOP7yxwmet.ANWeCd4f9cE42XOg7VckMXtfAWGI6', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
 ('13c7279b-9d2e-4afa-a641-ca2ebc14f151', NULL, NULL, NULL, NULL, 'Moh Rokim', NULL, '', 'Purworejo', '1970-01-01', 'Laki-laki', '', '$2y$10$e4R2Al8BX4cOeThtqNb.Tu/4/d7sKj6/eMXlbC93hnXyofaKiv51m', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
 ('13dd745d-221f-421f-b78b-138131893d28', NULL, NULL, NULL, NULL, 'Dedi Kurniadi', NULL, '', 'Ketapang', '1970-01-01', 'Laki-laki', '', '$2y$10$OLfkg6z/KvT1X5QLSuBvUuvFojKXW5Ap1pZk/bXKJmZjvd4T6/xgu', '', '', '', '2022-07-04 04:55:58', '2022-07-04 04:55:58'),
@@ -440,7 +408,7 @@ INSERT INTO `simadu__pegawai` (`id`, `nip`, `nup`, `nik_ktp`, `email`, `nama`, `
 ('1a3344f4-7b24-487e-a9fb-5ad326c13fff', '19900802 201903 1 003', NULL, NULL, NULL, 'Kondhang Dhika Kusuma', NULL, 'A.Md', 'Surakarta', '1990-08-02', 'Laki-laki', 'Islam', '$2y$10$GQ1CssTjIV8Tip9tlBzJb.UVCq27m6Ry8Lixf/VbWiZCpSugv8Vya', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),
 ('1a9c1f07-2017-4492-a4f6-0dc243e7d999', '19911112 201903 1 014', NULL, NULL, NULL, 'Kasrianto Wijaya', NULL, 'A.Md', 'Palopo', '1991-11-12', 'Laki-laki', 'Islam', '$2y$10$88Dj2ALMFaMFSYhdFA0Hf.dUKYtfstdhJgrzv3AVYdkGRbHFZZK8u', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),
 ('1b0267f4-d517-4512-a4c3-301a96372d12', '19890623 201903 2 015', NULL, NULL, NULL, 'Syarifah Aqla', NULL, 'S.Pd.,M.T', 'Pontianak', '1989-06-23', 'Perempuan', 'Islam', '$2y$10$rXweNbPNP7/HbBcqzu1jeOXXgZ86bSBSsPgQug4EYkEy.2KP2jXJq', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),
-('1b0267f4-d517-4512-a4c3-301a96372d13', '111111111111111111', '11111111111111111', NULL, NULL, 'User', NULL, NULL, 'Ketapang', '1989-06-23', 'Laki-Laki', 'Islam', '$2y$10$UFTJkBWTxW7BudTlrdIvVuk9d10BHlRLOgG8.T.FmkugCXj0MdL5e', 'app/fotofoto/1658420107-foto-eR8w9.png', 'User', '', '2022-07-04 04:55:59', '2022-07-21 09:15:07'),
+('1b0267f4-d517-4512-a4c3-301a96372d13', '111111111111111111', '11111111111111111', NULL, NULL, 'User', NULL, NULL, 'Ketapang', '1989-06-23', 'Laki-Laki', 'Islam', '$2y$10$UFTJkBWTxW7BudTlrdIvVuk9d10BHlRLOgG8.T.FmkugCXj0MdL5e', NULL, 'User', '', '2022-07-04 04:55:59', '2022-07-21 09:15:07'),
 ('1b483074-16f8-4c4a-908a-ba3e3ee8e7e1', '19780511 202121 1 003', NULL, NULL, NULL, 'Helanianto', NULL, 'S.T.,M.T', 'Randau', '1978-05-11', 'Laki-laki', 'Katholik', '$2y$10$ghU0LJhQp2neACGmDEL5UOA7Q3I5zU50HTQ50NhKOLk32uXsv7efS', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),
 ('1ba7321f-8186-4fbb-8cff-ff1d597d4336', '19760921 202121 1 002', NULL, NULL, NULL, 'Normansyah', NULL, 'S.T.,M.T', 'Ketapang', '1976-09-21', 'Laki-laki', 'Islam', '$2y$10$yU1nnS8xq//9uG63eHw0DuLNYJhocnuE.TxL9C592jor5YPR1C6wG', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),
 ('1d5b7688-73c1-4142-99f3-94bbae58ed79', '19880501 201903 1 007', NULL, NULL, NULL, 'Budi Pratomo Sibuea', NULL, 'S.ST.,M.ST', 'Tebing Karimun', '1988-05-01', 'Laki-laki', 'Kristen', '$2y$10$wx3dAoJxaVFLbv.7mE1.ROEoIhIZaHfdLk./mUOOM7UqIh7MoD54e', '', '', '', '2022-07-04 04:55:59', '2022-07-04 04:55:59'),

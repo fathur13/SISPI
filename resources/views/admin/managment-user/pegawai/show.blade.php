@@ -7,8 +7,14 @@
                                 <div class="col-lg-3 col-md-3 col-sm-12">
                                     <div class="">
                                         <div class="card">
-                                            <img src="{{ $pegawai->foto }}"
-                                                class="img-fluid profile-pic-container" style="width: 100%">
+                                            @if ($pegawai->foto)
+                                            <img src="{{url('public',$pegawai->foto) }}"
+                                            class="img-fluid profile-pic-container" style="width: 100%">
+                                            @else
+                                            <img src="{{url('public/assets') }}/img/profile.jpg"
+                                            class="img-fluid profile-pic-container" style="width: 100%">
+                                            @endif
+                                            
                                         </div>
                                     </div>
                                 </div>

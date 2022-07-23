@@ -40,7 +40,7 @@
                                 <tbody>
                                     <td>
                                         <a class="btn btn-square btn-sm btn-outline-dark btn-rounded"
-                                            href="{{ url($suratkeluar->file) }}" terget="_blank"
+                                            href="{{ url('public', $suratkeluar->file) }}" terget="_blank"
                                             download="">Download Surat</a>
                                     </td>
                                     <td>
