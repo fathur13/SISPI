@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Sispi\Admin\ArsipSurat;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\ArsipSurat\SuratKeluar;
 use App\Models\Admin\ArsipSurat\SuratMasuk;
-use App\Models\Admin\ManagmentData\Jenissurat;
+use App\Models\Admin\ManagmentData\JenisSurat;
 use App\Models\Admin\ManagmentData\Kelengkapan;
 use App\Models\Admin\ManagmentData\TemplateSurat;
 use Illuminate\Http\Request;
@@ -54,7 +54,7 @@ class SuratkeluarController extends Controller
 
         return view('sispi.admin.arsip-surat.surat-keluar.create',  compact('nomor', 'digunakan'), [
             'list_kelengkapan' => Kelengkapan::all(),
-            'list_jenissurat' => Jenissurat::all(),
+            'list_jenissurat' => JenisSurat::all(),
             'list_suratmasuk' => SuratMasuk::all(),
             'list_templatesurat' => Templatesurat::all()
         ],);

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Sispi\Admin\ArsipSurat;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin\ArsipSurat\SuratMasuk;
-use App\Models\Admin\ManagmentData\Jenissurat;
+use App\Models\Admin\ManagmentData\JenisSurat;
 use App\Models\Admin\ManagmentData\Kelengkapan;
 use Illuminate\Http\Request;
 
@@ -27,7 +27,7 @@ class SuratmasukController extends Controller
     {
         return view('sispi.admin.arsip-surat.surat-masuk.create', [
             'list_kelengkapan' => Kelengkapan::all(),
-            'list_jenissurat' => Jenissurat::all()
+            'list_jenissurat' => JenisSurat::all()
         ]);
     }
     public function store(Request $request)
