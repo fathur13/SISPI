@@ -6,7 +6,7 @@ use App\Models\Admin\ArsipSurat\SuratKeluar;
 use App\Models\Admin\ArsipSurat\SuratMasuk;
 use App\Models\Model;
 
-class Jenissurat extends Model
+class JenisSurat extends Model
 {
     public $table = "admin__jenissurat";
     protected $primaryKey = 'id';

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Sispi\Admin\ManagmentData;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\ManagmentData\Jenissurat;
+use App\Models\Admin\ManagmentData\JenisSurat;
 use Illuminate\Http\Request;
 
 class JenissuratController extends Controller
@@ -33,7 +33,7 @@ class JenissuratController extends Controller
      */
     public function store(Request $request)
     {
-        $jenissurat = new Jenissurat;
+        $jenissurat = new JenisSurat;
         $jenissurat->nama = request('nama');
         $jenissurat->save();
 
@@ -45,12 +45,12 @@ class JenissuratController extends Controller
     {
         //
     }
-    public function edit(Jenissurat $jenis_surat)
+    public function edit(JenisSurat $jenis_surat)
     {
         $data['jenis_surat'] = $jenis_surat;
         return view('sispi.admin.managment-data.jenis-surat.edit', $data);
     }
-    public function update(Jenissurat $jenis_surat)
+    public function update(JenisSurat $jenis_surat)
     {
         $jenis_surat->nama = request('nama');
         $jenis_surat->save();
