@@ -35,16 +35,16 @@
                         </div>
                         <hr>
                         <div class="row ">
-                            <table class="table table-bordered "  style="text-align: center">
+                            <table class="table table-bordered " style="text-align: center">
                                 <thead class="thead-dark ">
                                     <tr>
-                                        <th >File Lampiran</th>
+                                        <th>File Lampiran</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <td>
                                         <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" terget="popup"
-                                            onclick="window.open('{{ url('public',$suratkeluar->file) }}','popup','width=800,height=600'); return false;">Download
+                                            onclick="window.open('{{ url('public') . $suratkeluar->file }}','popup','width=800,height=600'); return false;">Download
                                             Surat</a>
                                     </td>
                                 </tbody>
