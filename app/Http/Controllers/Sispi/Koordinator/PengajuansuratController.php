@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Sispi\Koordinator;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin\ArsipSurat\SuratKeluar;
-use App\Models\Admin\ManagmentData\Jenissurat;
+use App\Models\Admin\ManagmentData\JenisSurat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -99,7 +99,7 @@ class PengajuansuratController extends Controller
     {
         $data['suratkeluar'] = $suratkeluar;
         return view('sispi.koordinator.pengajuan-surat.edit', [
-            'list_jenissurat' => Jenissurat::all()
+            'list_jenissurat' => JenisSurat::all()
         ], $data);
     }
     public function update(SuratKeluar $suratkeluar)
