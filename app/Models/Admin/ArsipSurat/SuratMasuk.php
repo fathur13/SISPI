@@ -2,7 +2,7 @@
 
 namespace App\Models\Admin\ArsipSurat;
 
-use App\Models\Admin\ManagmentData\Jenissurat;
+use App\Models\Admin\ManagmentData\JenisSurat;
 use App\Models\Model;
 use Illuminate\Support\Str;
 
@@ -25,7 +25,7 @@ class SuratMasuk extends Model
     
     function jenissurat()
     {
-        return $this->belongsTo(Jenissurat::class, 'id_jenissurat');
+        return $this->belongsTo(JenisSurat::class, 'id_jenissurat');
     }
     function Kelengkapan()
     {
