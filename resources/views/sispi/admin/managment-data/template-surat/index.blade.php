@@ -62,7 +62,7 @@
                                     <td style="text-align:left">{{ $templatesurat->nama }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <a href="{{ url('public'). $templatesurat->file_template_surat }}"><button
+                                            <a href="{{ url('public'). "/$templatesurat->file_template_surat" }}"><button
                                                     class="btn btn-info" style=""><i
                                                         class="fa fa-download"></i>
                                                     Download</button>

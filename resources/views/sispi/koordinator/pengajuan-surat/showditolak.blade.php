@@ -44,7 +44,7 @@
                                 <tbody>
                                     <td>
                                         <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" terget="_blank"
-                                            href="{{ url('public'). $suratkeluar->file }}">Download File</a>
+                                            href="{{ url('public'). "/$suratkeluar->file" }}">Download File</a>
                                     </td>
                                 </tbody>
                             </table>

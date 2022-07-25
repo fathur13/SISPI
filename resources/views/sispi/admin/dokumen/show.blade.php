@@ -57,7 +57,7 @@
                                 <tbody>
                                     <td>
                                         <a class="btn btn-square btn-sm btn-outline-dark btn-rounded" terget="popup"
-                                            onclick="window.open('{{ url('public'). $dokuman->file }}','popup','width=800,height=600'); return false;">Download
+                                            onclick="window.open('{{ url('public'). "/$dokuman->file" }}','popup','width=800,height=600'); return false;">Download
                                             Lampiran</a>
                                     </td>
                                 </tbody>
